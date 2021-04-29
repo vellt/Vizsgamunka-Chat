@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Egyéb\Szoftverfejlesztő_OKJ\Vizsga\SZBvizsgamunkaChat\SZBvizsgamunkaChat\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="View\Alerts\TermsDialogUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\AboutUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\HelpButtonUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\MessageTempUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\NewMessageTempUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\PrivacyPolicyBodyUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\PrivacyPolicyHeaderUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\PwdCheckerUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\ReceiverMessageUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\SearchBarUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\SenderMessageUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\SwitchUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Controls\UserCardUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\AboutUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\BinUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\ExitUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\EyeUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\HelpUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\HomeUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\MenuUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\MessagesUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\PlusUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\PrivacyPolicyUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\Profile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\RightArrowUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\SearchUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\SecurityUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\SendUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\SettingsUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\TermsUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Icons\WrenchUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Windows\MainWindow\Pages\Home\HomeUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Windows\MainWindow\Pages\Messages\MessagesUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Windows\MainWindow\Pages\Settings\Pages\AboutUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Windows\MainWindow\Pages\Settings\Pages\AccountSettingsUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Windows\MainWindow\Pages\Settings\Pages\HelpUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Windows\MainWindow\Pages\Settings\Pages\PrivacyPolicyUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Windows\MainWindow\Pages\Settings\Pages\ProfileUpadeUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Windows\MainWindow\Pages\Settings\Pages\SubPages\EmailUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Windows\MainWindow\Pages\Settings\Pages\SubPages\PwdUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Windows\MainWindow\Pages\Settings\Pages\TermsUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Windows\MainWindow\Pages\Settings\SettingsUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Alerts\TermsDialogUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\AboutUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\HelpButtonUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\MessageTempUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\NewMessageTempUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\PrivacyPolicyBodyUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\PrivacyPolicyHeaderUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\PwdCheckerUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\ReceiverMessageUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\SearchBarUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\SenderMessageUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\SwitchUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Controls\UserCardUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\AboutUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\BinUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\ExitUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\EyeUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\HelpUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\HomeUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\MenuUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\MessagesUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\PlusUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\PrivacyPolicyUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\Profile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\RightArrowUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\SearchUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\SecurityUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\SendUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\SettingsUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\TermsUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Icons\WrenchUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\MainWindow\Pages\Home\HomeUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\MainWindow\Pages\Messages\MessagesUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\MainWindow\Pages\Settings\Pages\AboutUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\MainWindow\Pages\Settings\Pages\AccountSettingsUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\MainWindow\Pages\Settings\Pages\HelpUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\MainWindow\Pages\Settings\Pages\PrivacyPolicyUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\MainWindow\Pages\Settings\Pages\ProfileUpadeUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\MainWindow\Pages\Settings\Pages\SubPages\EmailUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\MainWindow\Pages\Settings\Pages\SubPages\PwdUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\MainWindow\Pages\Settings\Pages\TermsUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\MainWindow\Pages\Settings\SettingsUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

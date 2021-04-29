@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="SZBvizsgamunkaChat.View.Controls.SwitchUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Storyboard x:Key="moveAnimation">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ball" Storyboard.TargetProperty="(FrameworkElement.HorizontalAlignment)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static HorizontalAlignment.Left}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static HorizontalAlignment.Right}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static HorizontalAlignment.Right}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="ball" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="2,0,2,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.2000000" Value="40,0,2,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.3000000" Value="2,0,2,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="background" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFE1E1E1"/>
+                <EasingColorKeyFrame KeyTime="00:00:00.3000000" Value="#FF96CBA4"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="moveAnimation2">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ball" Storyboard.TargetProperty="(FrameworkElement.HorizontalAlignment)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static HorizontalAlignment.Right}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static HorizontalAlignment.Left}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static HorizontalAlignment.Left}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="ball" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="2,0,2,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.2000000" Value="2,0,30,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.3000000" Value="2,0,2,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="background" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF96CBA4"/>
+                <EasingColorKeyFrame KeyTime="00:00:00.3000000" Value="#FFE1E1E1"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <Grid x:Name="switchGrid" Height="30" Width="60" Cursor="Hand" PreviewMouseUp="switchGrid_PreviewMouseUp">
+        <Rectangle x:Name="background" RadiusY="40" RadiusX="14"  Fill="#E1E1E1"/>
+        <Rectangle x:Name="ball" HorizontalAlignment="Left" Margin="2 0"  Width="26" Height="26" RadiusY="40" RadiusX="14" VerticalAlignment="Center" Fill="White"/>
+
+    </Grid>
+</UserControl>

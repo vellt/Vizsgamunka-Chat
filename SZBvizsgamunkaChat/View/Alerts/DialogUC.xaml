@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="SZBvizsgamunkaChat.View.Alerts.DialogUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Alerts" xmlns:icon="clr-namespace:SZBvizsgamunkaChat.View.Icons"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Name="dialog">
+    <Grid Background="#19000000" >
+        <Grid Height="215" Width="460" Background="White" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+            <Grid  Grid.Row="0" >
+                <!--header-->
+                <ContentControl x:Name="header" Content="header" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60 0" FontFamily="Segoe UI" Foreground="Black" FontSize="20" FontWeight="Regular"/>
+                <Grid x:Name="close" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="30 0" Cursor="Hand" Background="White" PreviewMouseUp="close_PreviewMouseUp">
+                    <icon:CloseUC Height="14" />
+                </Grid>
+            </Grid>
+            <Grid  Grid.Row="1" >
+                <!--Body-->
+                <TextBlock x:Name="body" Text="body" Margin="60 5 60 5" TextWrapping="Wrap" FontFamily="Segoe UI" Foreground="#616161" FontSize="16" />
+            </Grid>
+            <Grid Grid.Row="2" Background="#F7F8FA">
+                <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal" Margin="23 0">
+                    <!--button-->
+                    <Grid x:Name="okGrid" Visibility="Collapsed">
+                        <Grid Width="90" Height="40" Background="#EC6D6D" Cursor="Hand" PreviewMouseUp="okButton_PreviewMouseUp" >
+                            <ContentControl x:Name="okButton" Content="Ok" Foreground="White" FontFamily="Segoe UI" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                    </Grid>
+                    <StackPanel x:Name="yesNoGrid" Orientation="Horizontal" Visibility="Collapsed">
+                        <Grid  x:Name="yesButton" Width="90" Height="40" Background="#F7F8FA" Cursor="Hand" PreviewMouseUp="yesButton_PreviewMouseUp">
+                            <ContentControl Content="Igen"  Foreground="#616161" FontFamily="Segoe UI" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                        <Grid  Width="90" Height="40" Background="#EC6D6D" Cursor="Hand" PreviewMouseUp="noButton_PreviewMouseUp" >
+                            <ContentControl x:Name="noButton" Content="Nem" Foreground="White" FontFamily="Segoe UI" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

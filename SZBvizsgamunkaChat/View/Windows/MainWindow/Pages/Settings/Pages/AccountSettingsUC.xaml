@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="SZBvizsgamunkaChat.View.Windows.MainWindow.Pages.Settings.Pages.AccountSettingsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Windows.MainWindow.Pages.Settings.Pages"
+             xmlns:icons="clr-namespace:SZBvizsgamunkaChat.View.Icons"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <Grid Name="emailBTN" Height="126" Background="White" Cursor="Hand" PreviewMouseUp="emailBTN_PreviewMouseUp">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <ContentControl Content="E-mail" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="25" Margin="50 0 0 0"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <ContentControl Content="{Binding Path=Email, Mode=TwoWay}" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="20" Foreground="#707070"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <icons:RightArrowUC Height="15"/>
+                </Grid>
+            </Grid>
+            <Grid Height="1" VerticalAlignment="Bottom" Background="#D5D5D5"/>
+        </Grid>
+        <Grid x:Name="PwdBTN" Height="126" Background="White" Cursor="Hand" PreviewMouseUp="PwdBTN_PreviewMouseUp">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <ContentControl Content="Jelszó" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="25" Margin="50 0 0 0"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <ContentControl Content="Jelszó módosítása" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="20" Foreground="#707070"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <icons:RightArrowUC Height="15"/>
+                </Grid>
+            </Grid>
+            <Grid Height="1" VerticalAlignment="Bottom" Background="#D5D5D5"/>
+        </Grid>
+        <Grid x:Name="AccDelBTN" Height="126" Cursor="Hand" Background="White" PreviewMouseUp="AccDelBTN_PreviewMouseUp" MouseEnter="AccDelBTN_MouseEnter" MouseLeave="AccDelBTN_MouseLeave">
+            <ContentControl Content="Fiók törlése" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="25" Margin="50 0 0 0"/>
+            <Grid Height="1" VerticalAlignment="Bottom" Background="#D5D5D5"/>
+        </Grid>
+    </StackPanel>
+</UserControl>

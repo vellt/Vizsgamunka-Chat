@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="SZBvizsgamunkaChat.View.Controls.NewMessageTempUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Controls"
+             xmlns:icons="clr-namespace:SZBvizsgamunkaChat.View.Icons"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="478">
+    <Grid Background="WhiteSmoke" Cursor="Hand" Height="80" >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="110"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+            <Grid Height="50" Width="50" Grid.Column="0" VerticalAlignment="Center">
+                <Rectangle Width="50" Height="50" RadiusX="25" RadiusY="25">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="{Binding Picture}"  Stretch="UniformToFill"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Grid HorizontalAlignment="Right" Height="21" VerticalAlignment="Bottom"  Width="21" Margin="-4 ">
+                    <Rectangle   RadiusX="50" RadiusY="50" Stroke="White" Fill="#96CBA4" StrokeThickness="2" />
+                    <icons:PlusUC Height="12"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <ContentControl Grid.Row="0" Content="Új üzenet küldése " FontFamily="Segoe UI" FontSize="15" Foreground="#707070" Margin="10 0 0 0" VerticalAlignment="Bottom" />
+                <Grid  Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ContentControl Grid.Column="0" Content="{Binding Name}" FontFamily="Segoe UI" FontSize="15" Foreground="#707070" Margin="10 0 0 0 " VerticalAlignment="Top" />
+                    <ContentControl Grid.Column="1" Content="részére:" FontFamily="Segoe UI" FontSize="15" Foreground="#707070" Margin="4 0 0 0 " VerticalAlignment="Top" />
+                </Grid>
+                
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="SZBvizsgamunkaChat.View.Controls.AboutUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="125"/>
+            <RowDefinition Height="1"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0"  Background="White">
+            <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                <ContentControl x:Name="headerCC" Content="Group Name" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="20" Margin="63 0 63 10"/>
+                <ContentControl x:Name="bodyCC" Content="Group Name" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="25" Margin="63 0" Foreground="#707070"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Background="#D5D5D5"/>
+    </Grid>
+</UserControl>

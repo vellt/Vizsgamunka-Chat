@@ -1,0 +1,127 @@
+﻿<UserControl x:Class="SZBvizsgamunkaChat.View.Windows.MainWindow.Pages.Settings.SettingsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Windows.MainWindow.Pages.Settings"
+             xmlns:icons="clr-namespace:SZBvizsgamunkaChat.View.Icons"
+             xmlns:pages="clr-namespace:SZBvizsgamunkaChat.View.Windows.MainWindow.Pages.Settings.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="796" d:DesignWidth="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="365"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="beallitasokSubPage" Grid.Column="1" Background="White">
+                <!--subpages-->
+                
+            </Grid>
+            <Grid Grid.Column="0" Background="White">
+                <Grid.Effect>
+                    <DropShadowEffect BlurRadius="15" Direction="-90" RenderingBias="Quality" ShadowDepth="2" Color="#FFE8E8E8"/>
+                </Grid.Effect>
+                <StackPanel x:Name="beallitasokBox">
+                    <!--navigation buttons-->
+                    <Grid Height="85" Background="White" Cursor="Hand" PreviewMouseUp="navigation_PreviewMouseUp">
+                        <Grid Height="85">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="85"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <icons:Profile Height="22"/>
+                            </Grid>
+                            <ContentControl Grid.Column="1" Content="Profil szerkesztése" FontFamily="Segoe UI" FontSize="20" VerticalAlignment="Center"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Height="85" Background="White" Cursor="Hand" PreviewMouseUp="navigation_PreviewMouseUp">
+                        <Grid Height="85">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="85"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <icons:WrenchUC Height="22"/>
+                            </Grid>
+                            <ContentControl Grid.Column="1" Content="Fiók beállítása" FontFamily="Segoe UI" FontSize="20" VerticalAlignment="Center"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Height="85" Background="White" Cursor="Hand" PreviewMouseUp="navigation_PreviewMouseUp">
+                        <Grid Height="85">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="85"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <icons:PrivacyPolicyUC Width="22"/>
+                            </Grid>
+                            <ContentControl Grid.Column="1" Content="Adatvédelem" FontFamily="Segoe UI" FontSize="20" VerticalAlignment="Center"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Height="85" Background="White" Cursor="Hand" PreviewMouseUp="navigation_PreviewMouseUp">
+                        <Grid  Background="WhiteSmoke" Visibility="Collapsed"  />
+                        <Grid Height="85">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="85"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <icons:TermsUC Height="22"/>
+                            </Grid>
+                            <ContentControl Grid.Column="1" Content="Feltételek" FontFamily="Segoe UI" FontSize="20" VerticalAlignment="Center"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Height="85" Background="White" Cursor="Hand" PreviewMouseUp="navigation_PreviewMouseUp">
+                        <Grid  Background="WhiteSmoke" Visibility="Collapsed"  />
+                        <Grid Height="85">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="85"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <icons:HelpUC Height="22"/>
+                            </Grid>
+                            <ContentControl Grid.Column="1" Content="Súgó" FontFamily="Segoe UI" FontSize="20" VerticalAlignment="Center"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Height="85" Background="White" Cursor="Hand" PreviewMouseUp="navigation_PreviewMouseUp">
+                        <Grid  Background="WhiteSmoke" Visibility="Collapsed"  />
+                        <Grid Height="85">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="85"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <icons:AboutUC Height="22"/>
+                            </Grid>
+                            <ContentControl Grid.Column="1" Content="Névjegy" FontFamily="Segoe UI" FontSize="20" VerticalAlignment="Center"/>
+                        </Grid>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="0" Background="White" >
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="-90" RenderingBias="Quality" ShadowDepth="2" Color="#FFE8E8E8"/>
+            </Grid.Effect>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="224"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <ContentControl Content="Beállítások" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="65 0 0 0"  FontSize="24" FontFamily="Segoe UI" FontWeight="Bold" />
+            </Grid>
+
+        </Grid>
+    </Grid>
+</UserControl>

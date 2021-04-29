@@ -1,0 +1,19 @@
+﻿<Window x:Class="SZBvizsgamunkaChat.View.Windows.FirstWindow.FirstWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Windows.FirstWindow"
+        xmlns:control="clr-namespace:SZBvizsgamunkaChat.View.Controls"
+        xmlns:icon="clr-namespace:SZBvizsgamunkaChat.View.Icons"
+        xmlns:page="clr-namespace:SZBvizsgamunkaChat.View.Windows.FirstWindow.Pages"
+        mc:Ignorable="d"
+        Title="FirstWindow" Height="662" Width="1076" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+    <Grid x:Name="hatter">
+        <Grid x:Name="hatterkep"  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 80 20 0" >
+            <icon:BackgroundUC Height="419"/>
+        </Grid>
+        <Grid x:Name="moduls">
+        </Grid>
+    </Grid>
+</Window>

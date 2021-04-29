@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="SZBvizsgamunkaChat.View.Windows.FirstWindow.Pages.RegistrationSuccessful"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Windows.FirstWindow.Pages"
+             xmlns:icon="clr-namespace:SZBvizsgamunkaChat.View.Icons"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel VerticalAlignment="Center">
+        <ContentControl Content="Sikeres regisztráció!" FontFamily="Segoe UI" FontSize="30" HorizontalAlignment="Center" Foreground="#707070"/>
+        <ContentControl Content="Most már tagja vagy a közösségünknek" FontFamily="Segoe UI" FontSize="18" HorizontalAlignment="Center" Foreground="#707070"/>
+        <Border Margin="0 14" Height="115" Width="115" Background="#1E6ECBA4" CornerRadius="100">
+            <Border Height="70" BorderThickness="3" BorderBrush="#96CBA4" Width="70" CornerRadius="100" Background="White">
+                <icon:PipeUC Height="24"/>
+            </Border>
+        </Border>
+        <Border Margin="0 24" Background="#96CBA4" Width="158" Height="49" CornerRadius="25" Cursor="Hand" PreviewMouseUp="Border_PreviewMouseUp">
+            <ContentControl Content="Belépés" Foreground="White" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Border>
+    </StackPanel>
+</UserControl>

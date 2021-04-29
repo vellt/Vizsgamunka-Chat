@@ -1,0 +1,62 @@
+﻿<Window x:Class="SZBvizsgamunkaChat.View.Windows.MainWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Windows.MainWindow"
+        xmlns:icons="clr-namespace:SZBvizsgamunkaChat.View.Icons"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="796" Width="1280" MinHeight="796" MinWidth="1280"  Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" x:Name="mainContent">
+                <!--pages-->
+            </Grid>
+            <Grid Grid.Column="0" Background="White">
+                <Grid.Effect>
+                    <DropShadowEffect BlurRadius="15" Direction="-90" RenderingBias="Quality" ShadowDepth="2" Color="#FFE8E8E8"/>
+                </Grid.Effect>
+                <StackPanel VerticalAlignment="Top">
+                    <Grid Height="117" Background="White" Cursor="Hand" PreviewMouseUp="profilPicture_PreviewMouseUp">
+                        <Rectangle Height="50" Width="50" RadiusY="40" RadiusX="40" Fill="LightGray" Margin="15 15 15 0" VerticalAlignment="Top"/>
+                        <Rectangle Height="50" Width="50" RadiusY="40" RadiusX="40" Margin="15 15 15 0" VerticalAlignment="Top">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource="{Binding Path=Picture, Mode=TwoWay}" Stretch="UniformToFill"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    </Grid>
+                    <StackPanel x:Name="navigationBtns">
+                        <Grid x:Name="homeButton" Height="80" Cursor="Hand" Background="White" PreviewMouseUp="navigationBtns_PreviewMouseUp">
+                            <Rectangle Height="50" Width="50" RadiusY="40" RadiusX="40" Fill="WhiteSmoke" Visibility="Collapsed"/>
+                            <icons:HomeUC Height="20" />
+                        </Grid>
+                        <Grid x:Name="messagesButton" Height="80" Cursor="Hand" Background="White" PreviewMouseUp="navigationBtns_PreviewMouseUp">
+                            <Rectangle Height="50" Width="50" RadiusY="40" RadiusX="40" Fill="WhiteSmoke" Visibility="Collapsed"/>
+                            <Grid x:Name="notifyGR" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="8" Visibility="Collapsed">
+                                <Rectangle Height="25" Width="25" RadiusY="12.5" RadiusX="12.5" Fill="#E2747F" Stroke="White" StrokeThickness="2"/>
+                                <ContentControl Content="12" FontFamily="Segoe UI" Foreground="White" FontSize="11" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Grid>
+                            <icons:MessagesUC Height="20" Fill="Black"/>
+                        </Grid>
+                        <Grid x:Name="settingsButton" Height="80" Cursor="Hand" Background="White" PreviewMouseUp="navigationBtns_PreviewMouseUp">
+                            <Rectangle Height="50" Width="50" RadiusY="40" RadiusX="40" Fill="WhiteSmoke" Visibility="Collapsed"/>
+                            <icons:SettingsUC Height="20" />
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+                <Grid x:Name="logOut" Cursor="Hand" VerticalAlignment="Bottom" Height="80" Background="White" MouseEnter="logOut_MouseEnter" MouseLeave="logOut_MouseLeave" PreviewMouseUp="logOut_PreviewMouseUp" >
+                    <icons:ExitUC Height="20" Fill="Black"/>
+                </Grid>
+            </Grid>
+
+
+        </Grid>
+        <Grid x:Name="alertGR">
+            <!--alert helye-->
+        </Grid>
+    </Grid>
+</Window>

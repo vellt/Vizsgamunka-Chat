@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="SZBvizsgamunkaChat.View.Controls.PwdCheckerUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Controls"
+             xmlns:icons="clr-namespace:SZBvizsgamunkaChat.View.Icons"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Name="pwdCheckerUC">
+    <Grid Height="126" Background="White">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="126"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <ContentControl Grid.Row="0" Content="{Binding Title, ElementName=pwdCheckerUC}" Margin="63 0" VerticalAlignment="Bottom" FontSize="20" Foreground="#707070" FontFamily="Segoe UI"/>
+
+                <Grid  Grid.Row="1">
+                    <Grid >
+                        <TextBox x:Name="textBox" Margin="60 0" VerticalAlignment="Center" FontSize="20"  FontFamily="Segoe UI" BorderThickness="0" BorderBrush="Transparent" Background="Transparent" Visibility="Collapsed" LostFocus="textBox_LostFocus" TextChanged="TextBox_TextChanged"/>
+                        <PasswordBox x:Name="passwordBox" Margin="60 0" VerticalAlignment="Center" FontSize="20"  FontFamily="Segoe UI" BorderThickness="0" BorderBrush="Transparent" Background="Transparent" LostFocus="passwordBox_LostFocus" PasswordChanged="PasswordBox_PasswordChanged" />
+                    </Grid>
+                    <Grid x:Name="currentPwdCC" Background="White" MouseUp="currentPwdCC_MouseUp" Cursor="IBeam">
+                        <ContentControl Content="Hozzáadás" Margin="63 0" VerticalAlignment="Center" FontSize="20" Foreground="#929292" FontFamily="Segoe UI"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1" Background="White" Cursor="Hand" PreviewMouseUp="eyeBTN_PreviewMouseUp">
+                <!--icon-->
+                <icons:EyeUC Height="24"/>
+            </Grid>
+        </Grid>
+        <Grid Height="1" VerticalAlignment="Bottom" Background="#D5D5D5"/>
+    </Grid>
+</UserControl>

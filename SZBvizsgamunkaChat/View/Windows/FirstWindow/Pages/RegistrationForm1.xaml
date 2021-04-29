@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="SZBvizsgamunkaChat.View.Windows.FirstWindow.Pages.RegistrationForm1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Windows.FirstWindow.Pages"
+             xmlns:control="clr-namespace:SZBvizsgamunkaChat.View.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="439" d:DesignWidth="379" Name="regForm1">
+    <StackPanel VerticalAlignment="Center">
+        <StackPanel Orientation="Horizontal" Margin="22 0 0 0">
+            <control:TextBoxUC x:Name="emailTXT" PlaceHolder="Email" Margin="0 10" DataContextChanged="emailTXT_DataContextChanged"/>
+            <ContentControl TabIndex="10" Margin="6 2 0 0" Foreground="#EC6D6D" FontSize="20" VerticalAlignment="Center"  Content="*"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="22 0 0 0">
+            <control:TextBoxUC x:Name="usernameTXT" PlaceHolder="Felhasználónév" Margin="0 10" DataContextChanged="usernameTXT_DataContextChanged" />
+            <ContentControl TabIndex="10"  Margin="6 2 0 0" Foreground="#EC6D6D" FontSize="20" VerticalAlignment="Center"  Content="*"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="22 0 0 0">
+            <control:PwdBoxUC x:Name="passwordTXT" PlaceHolder="Jelszó" Margin="0 10" />
+            <ContentControl TabIndex="10"  Margin="6 2 0 0" Foreground="#EC6D6D" FontSize="20" VerticalAlignment="Center"  Content="*"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="22 0 0 0">
+            <control:PwdBoxUC x:Name="passwordConfirmationTXT" PlaceHolder="Jelszó megerősítése" Margin="0 10" />
+            <ContentControl TabIndex="10"  Margin="6 2 0 0" Foreground="#EC6D6D" FontSize="20" VerticalAlignment="Center"  Content="*"/>
+        </StackPanel>
+
+        <control:BigButtonUC Text="Tovább" Margin="0 20"  PreviewMouseUp="BigButton_PreviewMouseUp"/>
+    </StackPanel>
+</UserControl>

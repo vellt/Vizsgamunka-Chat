@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="SZBvizsgamunkaChat.View.Windows.FirstWindow.Pages.RegistrationForm2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SZBvizsgamunkaChat.View.Windows.FirstWindow.Pages"
+             xmlns:icon="clr-namespace:SZBvizsgamunkaChat.View.Icons"
+             xmlns:control="clr-namespace:SZBvizsgamunkaChat.View.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="439" d:DesignWidth="379" Name="regForm2">
+    <StackPanel VerticalAlignment="Center" >
+        <Grid Width="120" Height="120" Margin="0 10">
+            <Border x:Name="profilePicture" Height="120" Width="120" BorderBrush="#4296CBA4" BorderThickness="3" CornerRadius="100" >
+                <Border.Background>
+                    <ImageBrush x:Name="imageHolder"/>
+                </Border.Background>
+            </Border>
+            <Border Name="editButton" Cursor="Hand" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="42" Height="42" BorderThickness="3" BorderBrush="White" CornerRadius="100" Background="#96CBA4" PreviewMouseUp="editButton_PreviewMouseUp">
+                <icon:EditUC Height="18"/>
+            </Border>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Margin="22 0 0 0">
+            <control:TextBoxUC x:Name="firstnameTXT" PlaceHolder="Vezetéknév" Margin="0 10" DataContextChanged="firstnameTXT_DataContextChanged" />
+            <ContentControl TabIndex="10"  Margin="6 6 0 0" Foreground="#EC6D6D" FontSize="20" VerticalAlignment="Center"  Content="*"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="22 0 0 0">
+            <control:TextBoxUC x:Name="lastnameTXT" PlaceHolder="Keresztnév" Margin="0 10 0 30" DataContextChanged="lastnameTXT_DataContextChanged"/>
+            <ContentControl TabIndex="10"  Margin="6 0 0 14" Foreground="#EC6D6D" FontSize="20" VerticalAlignment="Center"  Content="*"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center">
+            <ContentControl Content="A regisztráció befejezésével tudomásul veszi a " HorizontalAlignment="Center" FontSize="13" Foreground="#707070" FontFamily="Segoe UI"/>
+            <StackPanel Orientation="Horizontal">
+
+                <TextBlock x:Name="termsBTN" Text="felhasználási feltételeket" FontSize="13" FontFamily="Segoe UI" Foreground="#96CBA4" Background="White" Cursor="Hand" MouseUp="termsBTN_MouseUp">
+                    <TextBlock.TextDecorations>
+                        <TextDecoration/>
+                    </TextBlock.TextDecorations>
+                </TextBlock>
+                <ContentControl Content=" és az " FontSize="13" Foreground="#707070" FontFamily="Segoe UI"/>
+                <TextBlock x:Name="privacyBTN" Text="adatvédelmi szabályzatot" FontSize="13" FontFamily="Segoe UI" Foreground="#96CBA4" Background="White" Cursor="Hand" MouseUp="privacyBTN_MouseUp">
+                    <TextBlock.TextDecorations>
+                        <TextDecoration/>
+                    </TextBlock.TextDecorations>
+                </TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <control:BigButtonUC Text="Regisztráció befejezése" Margin="0 30 0 20"  PreviewMouseUp="BigButton_PreviewMouseUp"/>
+    </StackPanel>
+</UserControl>
